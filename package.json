@@ -1,0 +1,31 @@
+{
+	"name": "highlight-word",
+	"version": "1.0.0",
+	"description": "wrap strings in text with a mark",
+	"main": "bundle.main.js",
+	"scripts": {
+		"browserify": "browserify index.js -o bundle.js -t [ babelify --presets es2015 ]",
+		"uglify": "uglifyjs bundle.js -o bundle.min.js",
+		"build": "npm run browserify && npm run uglify"
+	},
+	"keywords": [
+		"highlight",
+		"word",
+		"string",
+		"text"
+	],
+	"license": "MIT",
+	"author": {
+		"name": "Dave Bitter",
+		"email": "davebitter@gmail.com",
+		"url": "https://github.com/DaveBitter"
+	},
+	"repository": "DaveBitter/highlight_word",
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-preset-es2015": "^6.24.1",
+		"babelify": "^8.0.0",
+		"browserify": "^16.2.0",
+		"uglify-js": "^3.3.21"
+	}
+}
