@@ -5,7 +5,7 @@ This tiny package wraps strings in a text you pass it in a mark. You can then st
 ## Example usage
 
 ```js
-const highlightWord = require('highlight-word);
+const highlightWord = require('highlight-word');
 
 const el = document.getElementById('example');
 const text = el.textContent;
